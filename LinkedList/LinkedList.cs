@@ -21,6 +21,41 @@ namespace LinkedList
             head = newNode;
         }
 
+        //Method to add elements at first
+        internal void AddAtFirst(int data)
+        {
+            Node newNode = new Node(data);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                newNode.Next = head;
+                head = newNode;
+            }
+
+        }
+
+        //Method to append elements 
+        internal void Append(int data)
+        {
+            Node newNode = new Node(data);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                Node temp = new Node(data);
+                temp = head;
+                while (temp.Next != null)
+                {
+                    temp = temp.Next;
+                }
+                temp.Next = newNode;
+            }
+        }
         //Method to display elements
         internal void Display()
         {
@@ -40,3 +75,5 @@ namespace LinkedList
         }
     }
 }
+
+
