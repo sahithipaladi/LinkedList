@@ -20,6 +20,20 @@ namespace LinkedList
             newNode.Next = head;
             head = newNode;
         }
+        
+         //Method to add elements at first
+        internal void AddAtFirst(int data)
+        {
+            Node newNode = new Node(data);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                newNode.Next = head;
+                head = newNode;
+            }
 
         //Method to display elements
         internal void Display()
