@@ -13,7 +13,7 @@ namespace LinkedList
         }
 
         //Method to add elements
-        internal void Add(int data)
+        public void Add(int data)
         {
             Node newNode = new Node(data);
             newNode.data = data;
@@ -22,7 +22,7 @@ namespace LinkedList
         }
 
         //Method to add elements at first
-        internal void AddAtFirst(int data)
+        public void AddAtFirst(int data)
         {
             Node newNode = new Node(data);
             if (head == null)
@@ -38,7 +38,7 @@ namespace LinkedList
         }
 
         //Method to append elements 
-        internal void Append(int data)
+        public void Append(int data)
         {
             Node newNode = new Node(data);
             if (head == null)
@@ -56,8 +56,34 @@ namespace LinkedList
                 temp.Next = newNode;
             }
         }
+
+        //Method to insert elements
+        public void Insert(int position, int data)
+        {
+            Node newNode = new Node(data);
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid Position");
+            }
+            else if (position == 1)
+            {
+                newNode.Next = head;
+                head = newNode;
+            }
+            else
+            {
+                Node temp = head;
+                while (position > 2)
+                {
+                    temp = temp.Next;
+                    position--;
+                }
+                newNode.Next = temp.Next;
+                temp.Next = newNode;
+            }
+        }
         //Method to display elements
-        internal void Display()
+        public void Display()
         {
             if (head == null)
                 Console.WriteLine("List is Empty");
@@ -75,5 +101,3 @@ namespace LinkedList
         }
     }
 }
-
-

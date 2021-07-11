@@ -11,13 +11,11 @@ namespace LinkedList
 
             //Adding elements to the list
             linkedList.Append(56);
-            linkedList.Append(30);
             linkedList.Append(70);
+            linkedList.Insert(2, 30);
 
             //Dispaly the list
             linkedList.Display();
         }
     }
 }
-
-
