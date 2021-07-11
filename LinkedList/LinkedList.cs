@@ -82,6 +82,57 @@ namespace LinkedList
                 temp.Next = newNode;
             }
         }
+        //Method to delete first element
+        public void DeleteAtFirst()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            head = head.Next;
+        }
+        //Method to delete last element
+        public void DeleteAtLast()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            else if (head.Next == null)
+            {
+                head = null;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp.Next.Next != null)
+                {
+                    temp = temp.Next;
+                }
+                temp.Next = null;
+            }
+        }
+        //Method to search an element
+        public bool Search(int data)
+        {
+            if (head == null)
+            {
+                return false;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp != null)
+                {
+                    if (temp.data == data)
+                    {
+                        return true;
+                    }
+                    temp = temp.Next;
+                }
+                return false;
+            }
+        }
         //Method to display elements
         public void Display()
         {

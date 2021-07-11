@@ -14,8 +14,17 @@ namespace LinkedList
             linkedList.Append(70);
             linkedList.Insert(2, 30);
 
-            //Dispaly the list
-            linkedList.Display();
+            if (linkedList.Search(56))
+            {
+                Console.WriteLine("The element 56 is found in the list");
+            }
+            else
+            {
+                Console.WriteLine("The element 56 is not found in the list");
+
+                //Dispaly the list
+                linkedList.Display();
+            }
         }
     }
 }
