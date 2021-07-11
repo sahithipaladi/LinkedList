@@ -82,6 +82,7 @@ namespace LinkedListImplementation
                 temp.Next = newNode;
             }
         }
+
         //Method to delete first element
         public void DeleteAtFirst()
         {
@@ -91,6 +92,7 @@ namespace LinkedListImplementation
             }
             head = head.Next;
         }
+
         //Method to delete last element
         public void DeleteAtLast()
         {
@@ -112,6 +114,7 @@ namespace LinkedListImplementation
                 temp.Next = null;
             }
         }
+
         //Method to search an element
         public bool Search(int data)
         {
@@ -132,6 +135,53 @@ namespace LinkedListImplementation
                 }
                 return false;
             }
+        }
+
+        //Method to delete an element
+        public bool Delete(int data)
+        {
+            bool flag = false;
+            if (head == null)
+            {
+                Console.WriteLine("List is empty");
+                return flag;
+            }
+            else
+            {
+                if (head.data == data)
+                {
+                    head = null;
+                    return flag;
+                }
+                else
+                {
+                    Node temp = head;
+                    while (temp.Next != null)
+                    {
+                        if (temp.Next.data == data)
+                        {
+                            temp.Next = temp.Next.Next;
+                            flag = true;
+                            break;
+                        }
+                        temp = temp.Next;
+                    }
+                    return flag;
+                }
+            }
+        }
+
+        //Method to determine size of the linked list
+        public int Size()
+        {
+            int size = 0;
+            Node temp = head;
+            while (temp != null)
+            {
+                size++;
+                temp = temp.Next;
+            }
+            return size;
         }
 
         //Method to display elements

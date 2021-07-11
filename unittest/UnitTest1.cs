@@ -39,5 +39,21 @@ namespace unittest
             //Assert
             Assert.IsTrue(linkedList.Search(40));
         }
+
+        public void TestMethod3()
+        {
+            ///AAA Methodology
+            //Arrange
+            LinkedList linkedList = new LinkedList();
+
+            //Act
+            linkedList.Append(56);
+            linkedList.Append(70);
+            linkedList.Insert(2, 30);
+            linkedList.Insert(3, 40);
+
+            //Assert
+            Assert.IsTrue(linkedList.Delete(40));
+        }
     }
 }
