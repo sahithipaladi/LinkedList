@@ -12,8 +12,10 @@ namespace LinkedListImplementation
             //Adding elements to the list
             linkedList.Append(56);
             linkedList.Append(70);
+            //Insert element at given position
             linkedList.Insert(2, 30);
 
+            //Search an element
             if (linkedList.Search(56))
             {
                 Console.WriteLine("The element 56 is found in the list");
@@ -21,12 +23,11 @@ namespace LinkedListImplementation
             else
             {
                 Console.WriteLine("The element 56 is not found in the list");
-
-                //Insert element at given position
-                linkedList.Insert(3, 40);
-                linkedList.Display();
             }
+
+            //Insert element at given position
+            linkedList.Insert(3, 40);
+            linkedList.Display();
         }
-        
     }
 }
