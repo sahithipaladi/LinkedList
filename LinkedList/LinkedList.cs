@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LinkedList
+namespace LinkedListImplementation
 {
-    class LinkedList
+    public class LinkedList
     {
         internal Node head;
         public LinkedList()
@@ -133,6 +133,7 @@ namespace LinkedList
                 return false;
             }
         }
+
         //Method to display elements
         public void Display()
         {

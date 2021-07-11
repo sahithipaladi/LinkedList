@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sahithi.P\\source\\repos\\LinkedList\\LinkedList\\LinkedList.csproj",
-      "projectName": "LinkedList",
-      "projectPath": "C:\\Users\\Sahithi.P\\source\\repos\\LinkedList\\LinkedList\\LinkedList.csproj",
+      "projectUniqueName": "C:\\Users\\Sahithi.P\\source\\repos\\LinkedList\\LinkedList\\LinkedListImplementation.csproj",
+      "projectName": "LinkedListImplementation",
+      "projectPath": "C:\\Users\\Sahithi.P\\source\\repos\\LinkedList\\LinkedList\\LinkedListImplementation.csproj",
       "packagesPath": "C:\\Users\\Sahithi.P\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Sahithi.P\\source\\repos\\LinkedList\\LinkedList\\obj\\",
       "projectStyle": "PackageReference",

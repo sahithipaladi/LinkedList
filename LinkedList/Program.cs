@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LinkedList
+namespace LinkedListImplementation
 {
     class Program
     {
@@ -22,9 +22,11 @@ namespace LinkedList
             {
                 Console.WriteLine("The element 56 is not found in the list");
 
-                //Dispaly the list
+                //Insert element at given position
+                linkedList.Insert(3, 40);
                 linkedList.Display();
             }
         }
+        
     }
 }
