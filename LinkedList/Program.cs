@@ -2,7 +2,7 @@
 
 namespace LinkedListImplementation
 {
-    class program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -41,7 +41,18 @@ namespace LinkedListImplementation
             Console.WriteLine("Size of the linked list is : " + linkedList.Size() + "\n");
             //Dispaly linked list 
             linkedList.Display();
+
+            Console.WriteLine("\n-----------------Sorted Linked List-------------------- \n");
+            SortedLinkedList sortedLinkedList = new SortedLinkedList();
+
+            sortedLinkedList.Add(56);
+            sortedLinkedList.Add(30);
+            sortedLinkedList.Add(40);
+            sortedLinkedList.Add(70);
+
+            Console.WriteLine("Size of the linked list is : " + sortedLinkedList.Size() + "\n");
+            // Displaying LinkedList....
+            sortedLinkedList.Display();
         }
     }
 }
-
